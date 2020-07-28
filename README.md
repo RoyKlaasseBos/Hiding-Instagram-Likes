@@ -1,5 +1,5 @@
 # Hiding Likes on Instagram 
-### Goodbye Likes, Hello Mental Health - How Hiding Like Counts Affects Self-Esteem and User Behavior
+### Goodbye Likes, Hello Mental Health - How Hiding Like Counts Affects User Behavior and Self-Esteem
 
 This repository contains supplemental material associated with my research master thesis. On a conceptual level we investigate the effect of hiding like counts on Instagram on users' posting frequency (H1), variety of visual-content (H2), like behavior (H3), and self-esteem (H4).
 <img src="https://raw.githubusercontent.com/RoyKlaasseBos/Hiding-Instagram-Likes/master/images/conceptual_model.jpg" alt="Conceptual model" width=750px />
