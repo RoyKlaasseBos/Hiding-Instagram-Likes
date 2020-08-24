@@ -20,8 +20,8 @@ Just like you sign in to Google Drive using your email and password credentials,
 1. Open up "Control Panel" > "System and Security" > "System"
 2. In the left sidebar click on "Advanced system settings"
 3. Click on "Environment Variables" in the bottom right
-4. Create a new "User Variable" (top list) and fill out the "Variable name" and "Variable value" (`INSTAGRAM_DB_URL` and [DB_URL], respectively).
-5. Repeat the same for the secret `INSTAGRAM_DB_KEY` and double click "OK" twice.
+4. Create a new "User Variable" (top list) and fill out the "Variable name" and "Variable value" (`INSTAGRAM_DB_URL` and [DB_URL], respectively)
+5. Repeat the same for the secret `INSTAGRAM_DB_KEY` and double click "OK" twice
 
 *Note: you may need to restart your terminal and IDE in order for the changes to go into effect*
 
