@@ -15,7 +15,7 @@ Just like you sign in to Google Drive using your email and password credentials,
 1. Go to the terminal and type `printenv` to list all environment variables stored on your machine. 
 2. Assuming that `INSTAGRAM_DB_URL` and `INSTAGRAM_DB_KEY` are not listed there yet, we going to define these two new variables. Type `nano .bash_profile` to open a text editor in the terminal. 
 3. Within this window you can create new variables as follows: `export [VARIABLE_NAME]="the string value you want to store";` (e.g. `INSTAGRAM_DB_URL="http://anotherurl.com"`). Note that there is no space between the variable name and its value and that the string is enclosed in double quotes. Using this approach create a `INSTAGRAM_DB_URL` and `INSTAGRAM_DB_KEY` variable (you can list them below one another in the same file).
-4. Exit the editor by pressing Ctrl + X, "Y" (to save changes), and finally press "Enter".
+4. Exit the editor by pressing Ctrl + X, choose `Y` (to save changes), and finally press `Enter`.
 
 *Windows*
 1. Open up "Control Panel" > "System and Security" > "System"
