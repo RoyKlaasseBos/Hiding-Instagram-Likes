@@ -16,16 +16,14 @@ Just like you sign in to Google Drive using your email and password credentials,
 2. Assuming that `INSTAGRAM_DB_URL` and `INSTAGRAM_DB_KEY` are not listed there yet, we're going to define these two new variables. Open the terminal, go to your user directory (shortcut: `cd ~`), and type `nano .bash_profile` to open a text editor in the terminal. 
 3. Within this window you can create new variables as follows: `export [VARIABLE_NAME]="the string value you want to store";` (e.g. `INSTAGRAM_DB_URL="http://anotherurl.com"`). Note that there is no space between the variable name and its value and that the string is enclosed in double quotes. Using this approach create a `INSTAGRAM_DB_URL` and `INSTAGRAM_DB_KEY` variable (you can list them below one another in the same file).
 4. Exit the editor by pressing Ctrl + X, choose `Y` (to save changes), and finally press `Enter`. 
-5. You can check whether everything worked out correctly by restarting your terminal and typing `printenv` (`INSTAGRAM_DB_URL` and `INSTAGRAM_DB_KEY` should be listered there now!). If the new envirionment variables didn't show up, you may need to use `nano .zshrc` instead of `nano .bash_profile` (see step 2; for newer OSX versions).
+5. You can check whether everything worked out correctly by restarting your terminal and typing `printenv` (`INSTAGRAM_DB_URL` and `INSTAGRAM_DB_KEY` should be listered there now!). If the new envirionment variables didn't show up, you may need to use `nano .zshrc` instead of `nano .bash_profile` (see step 2).
 
 *Windows*
 1. Open up "Control Panel" > "System and Security" > "System".
 2. In the left sidebar click on "Advanced system settings".
 3. Click on "Environment Variables" in the bottom right.
-4. Create a new "User Variable" (top list) and fill out the "Variable name" and "Variable value" (`INSTAGRAM_DB_URL` and [DB_URL], respectively).
+4. Create a new "User Variable" (top list) and fill out the "Variable name" and "Variable value" (`INSTAGRAM_DB_URL` and `[DB_URL]`, respectively).
 5. Repeat the same for the secret `INSTAGRAM_DB_KEY` and double click "OK" twice.
-
-*Note: you may need to restart your terminal and IDE in order for the changes to go into effect.*
 
 
 ## Acknowledgements
