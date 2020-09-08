@@ -12,7 +12,7 @@ The online appendix has been split up in two parts. The first part <a href="http
 We built on an observational data set scraped from Instagram (July 2020) and an experimental dataset obtained through a questionnaire on Prolific (N=600). Preprocessing of the raw data is documented in a step-by-step fashion in the appendix. Definitions and descriptions are outlined over <a href="https://github.com/RoyKlaasseBos/Hiding-Instagram-Likes/blob/master/Data_Set_Description.ipynb">here</a>. All data can be accessed through a relational database service. Attached online appendix refers to multiple environment variables in order to connect to the database (see instructions below). Credentials can be acquired by contacting one of the authors.
 
 ## Running Instructions
-### Configure Environment Variables
+### i. Configure Environment Variables
 Just like you sign in to Google Drive using your email and password credentials, we need to log in to our relational database using a database URL (`INSTAGRAM_DB_URL`) and database key/password (`INSTAGRAM_DB_KEY`) (available upon request). The idea is that we store these variables on our local machine without hardcoding them into our notebook. Below we briefly describe how to configure these environment variables. Alternatively, watch one of these tutorials ([Mac/Linux](https://www.youtube.com/watch?v=5iWhQWVXosU) & [Windows](https://www.youtube.com/watch?v=IolxqkL7cD8)). 
 
 *Mac / Linux*
@@ -29,20 +29,14 @@ Just like you sign in to Google Drive using your email and password credentials,
 4. Create a new "User Variable" (top list) and fill out the "Variable name" and "Variable value" (`INSTAGRAM_DB_URL` and `[DB_URL]`, respectively).
 5. Repeat the same for the secret `INSTAGRAM_DB_KEY` and double click "OK" twice.
 
-### Required Software Packages
-* <a href="https://www.anaconda.com/products/individual">Anaconda & Jupyter Notebook</a>
-* <a href="https://pypi.org/project/psycopg2/">psycopg2</a> (Python)
-* <a href="https://pypi.org/project/rpy2/">rpy2</a> (Python)
-* <a href="https://www.rdocumentation.org/packages/dplyr/versions/0.7.8">dplyr</a> (R)
-* <a href="https://www.rdocumentation.org/packages/erer/versions/3.0">erer</a> (R)
-* <a href="https://www.rdocumentation.org/packages/ez/versions/4.4-0">ez</a> (R)
-* <a href="https://www.rdocumentation.org/packages/MASS/versions/7.3-52">MASS</a> (R)
-* <a href="https://www.rdocumentation.org/packages/Matching/versions/4.9-7">Matching</a> (R)
-* <a href="https://www.rdocumentation.org/packages/plm/versions/2.2-4">plm</a> (R)
-* <a href="https://www.rdocumentation.org/packages/pscl/versions/1.5.5">pscl</a> (R)
-* <a href="https://www.rdocumentation.org/packages/psych/versions/2.0.7">psych</a> (R)
-* <a href="https://www.rdocumentation.org/packages/reshape/versions/0.8.8">reshape</a> (R)
-* <a href="https://www.rdocumentation.org/packages/RPostgreSQL/versions/0.6-2">RPostgreSQL</a> (R)
+### ii. Required Software Packages
+1. Install <a href="https://www.anaconda.com/products/individual">Anaconda</a> (Python distribution - including Jupyter Notebook).
+2. Open the terminal (Mac) or cmd (Windows), `cd` into above main directory (Hiding-Instagram-Likes), and type `conda create -n instagram --file requirements.txt`. This creates a virtual environment in which all packages are installed that are necessary to run the Jupyter notebooks.
+3. Open Anaconda Navigator, switch to the newly created `instagram` virtual environment, and launch Jupyter Notebook (you may first need to click on the green "Install" button before the blue "Launch" button appears). Alternatively, open a terminal and type `conda activate instagram` followed by `jupyter notebook` to open a Jupyter Notebook in the `instagram` environment.
+4. In the window that now opens navigate to the `Hiding-Instagram-Likes` directory and open either the Data Collection & Preparation or Data Analysis notebook. 
+<img src="https://raw.githubusercontent.com/RoyKlaasseBos/Hiding-Instagram-Likes/master/images/anaconda.png" alt="Virtual Environments" width=450px />
+
+*Note: you can freely run the notebooks from top to bottom. All lines that affect database records have been commented by default.*
 
 ## Acknowledgements
 In the past half a year I was supervised by Hannes Datta (TiSEM) and Niels van de Ven (TiSEM), who I would like to thank for their comments on my thesis. Furthermore, I am grateful for Microsoft for providing Azure credits which we used to study image similarity.
