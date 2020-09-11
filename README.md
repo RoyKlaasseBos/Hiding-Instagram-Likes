@@ -31,7 +31,7 @@ Just like you sign in to Google Drive using your email and password credentials,
 
 ### ii. Required Software Packages
 1. Install <a href="https://www.anaconda.com/products/individual">Anaconda</a> (Python distribution - including Jupyter Notebook).
-2. Open the terminal (Mac) or Anaconda Prompt (Windows), `cd` into above main directory (Hiding-Instagram-Likes), and type `conda create -n instagram --file requirements.txt`. This creates a virtual environment in which all packages are installed that are necessary to run the Jupyter notebooks.
+2. Open the terminal (Mac) or Anaconda Prompt (Windows), `cd` into above main directory (`Hiding-Instagram-Likes`), and type `conda create -n instagram --file requirements.txt`. This creates a virtual environment in which all packages are installed that are necessary to run the Jupyter notebooks.
 3. Open a terminal and type `conda activate instagram` followed by `pip install rpy2==3.3.3` to install the latest verion of rpy2 (note: `conda install` only supports rpy2 version 2.9.4 which causes runtime errors).
 4. Open Anaconda Navigator, switch to the newly created `instagram` virtual environment, and launch Jupyter Notebook (you may first need to click on the green "Install" button before the blue "Launch" button appears).
 5. In the window that now opens navigate to the `Hiding-Instagram-Likes` directory and open either the Data Collection & Preparation or Data Analysis notebook. 
