@@ -32,7 +32,7 @@ Just like you sign in to Google Drive using your email and password credentials,
 ### ii. Required Software Packages
 1. Install <a href="https://www.anaconda.com/products/individual">Anaconda</a> (Python distribution - including Jupyter Notebook).
 2. Open the terminal (Mac) or Anaconda Prompt (Windows), `cd` into above main directory (`Hiding-Instagram-Likes`), and type `conda create -n instagram --file requirements.txt`, followed by `y`. This creates a virtual environment in which all packages are installed that are necessary to run the Jupyter notebooks.
-3. Within the terminal type `conda activate instagram` followed by `conda install -c r r-essentials` to enable R support within Jupyter notebooks.
+3. Within the terminal type `conda activate instagram` followed by `conda install -c r r-essentials` to enable R support within Jupyter notebooks (if you're asked about the Java JDK, install it from [here](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)).
 4. Open Anaconda Navigator, switch to the newly created `instagram` virtual environment, and launch Jupyter Notebook (you may first need to click on the green "Install" button before the blue "Launch" button appears).
 5. In the window that now opens navigate to the `Hiding-Instagram-Likes` directory and open either the Data Collection & Preparation (Python) or Data Analysis (R) notebook. Make sure to pick the right kernel for each notebook. 		
  <img src="https://raw.githubusercontent.com/RoyKlaasseBos/Hiding-Instagram-Likes/master/images/anaconda.png" alt="Virtual Environments" width=450px />
